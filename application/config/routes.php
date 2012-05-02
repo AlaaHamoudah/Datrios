@@ -38,8 +38,12 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "matches";
 $route['404_override'] = '';
+$route['match/(:num)'] = 'matches/index/$1';
+$route['action/(:num)'] = 'actions/index/$1';
+$route['player/(:num)'] = 'players/index/$1';
+
 
 
 /* End of file routes.php */
