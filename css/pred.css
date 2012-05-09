@@ -1,0 +1,248 @@
+.blockShadow{
+	box-shadow:-3px -2px 5px rgba(0,0,0,.3);
+	-moz-box-shadow:-3px -2px 5px rgba(0,0,0,.3);
+	-webkit-box-shadow:-3px -2px 5px rgba(0,0,0,.3);
+	background-color:#fff;
+}
+body{
+	margin:0;
+	padding:0;
+	background-color:#f0f0f0;
+	font-family:'Segoe UI', Tahoma, Arial, Helvetica, Sans-Serif;
+}
+.button{
+	box-shadow: -6px -2px 0 #f2f2f2;
+	text-decoration: none;
+	background: #FC3;
+	color: #484848;
+	font-size: 11pt;
+	text-align: center;
+}
+#prediction{
+	width: 600px;
+	margin: 15px auto auto auto;
+}
+#predict{
+	width: 600px;
+	height: 120px;
+	color:#7d0808;
+	margin:auto;
+}
+#predict .name{
+	margin-top: 27px;
+	display: block;
+	float:left;
+	width:122px;
+	text-align:center;
+}
+#predict .team {
+	float:left;
+	height:67px;
+	width:292px;
+	margin-left: 3px;
+}
+#predict .team2{
+	margin-right:3px;
+}
+#predict .team .Counter{
+	margin-left:6px;
+	margin-right:6px;
+}
+#predict .team2 img,#predict .team2 .name{
+	float:right;
+}
+#predict .team1 .Counter{
+	float:right;
+}
+#predict img{
+	float:left;
+	margin:8px 2px;
+}
+#predict .spSpan{
+	float: left;
+	color: #1C97B8;
+	font-size: 24pt;
+	margin-top: 10px;
+}
+#predict .button{
+	display: block;
+	float: left;
+	width: 88px;
+	height: 24px;
+	line-height: 22px;
+	margin-left: 258px;
+	margin-top: -3px;
+}
+#predict .Counter{
+	margin-top: 25px;
+}
+.Counter{
+	width:40px;
+	height:26px;
+	background:url(../images/tmpCounter.png) no-repeat;
+	float:left;
+}
+.Counter a{
+	display: block;
+	width: 7px;
+	height: 6px;
+	background: url(../images/counter.png) no-repeat;
+	cursor: pointer;
+	float: left;
+	margin-left: 4px;
+	margin-top: 5px;
+}
+.Counter .CoUp{
+	background-position:top;
+}
+.Counter .CoDown{
+	background-position:bottom;
+}
+.Counter input{
+	font-size: 11pt;
+	display: block;
+	width: 22px;
+	margin-top: 3px;
+	text-align: center;
+	color: #484848;
+	float:left;
+	border:none !important;
+	background:none !important;
+}
+.Counter input:focus{
+    outline: none;
+}
+#prediction .predPart{
+	width:33.3%;
+	height:100%;
+	float:left;
+	background:url(../images/border_user.png) no-repeat center right;
+}
+#prediction .nums{
+	color:#fff;
+	display:inline-block;
+	background-color:#086e89;
+	padding:3px;
+	margin-top:10px;
+	-webkit-transform:skewX(8deg);
+	border-radius:5px;
+	
+}
+#prediction .sayth{
+	color:#086e89;
+	line-height:49px;
+	
+}
+#prediction .winsTT{
+	margin:15px 6px;
+}
+#prediction .winsTT span{
+	color:#086e89;
+	display:block;
+}
+#prediction .pers{
+	color: #7F7F7F !important;
+	font-size: 16px;
+}
+#prediction .winsTT img{
+	display:block;
+	float:left;
+}
+#prediction .Users{
+	margin-top:15px;
+}
+#prediction .Users img {
+	margin-left:8px;
+	float:left;
+}
+#prediction .predPart.equal .Users{
+	margin-top:1px;
+}
+.topTitle{
+	display: block;
+	font-size: 14px;
+	color: white;
+	background-color: #086E89;
+	margin: 0 20px;
+	border-radius: 0 0 11px 11px;
+	padding-bottom: 2px;
+	text-align:center;
+}
+#prediction .predPart.last{
+	background:none;
+}
+/*#prediction .eqPrBy{
+	color:#7d0808;
+	margin-top: 25px;
+	display: block;
+}*/
+.logo{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+#continue .or{
+	float: left;
+	font: normal 16px / 16px Arial,sans-serif;
+	margin: 14px 10px 0 5px;
+	color: #635357;
+}
+#continue a{
+	display: block;
+	float: left;
+	width: 250px;
+	height: 70px;
+}
+#continue{
+	width: 560px;
+	margin: auto;
+	margin-bottom:10px;
+}
+#fb-connect{background:url(../images/continue.png) -292px -11px no-repeat;}
+#fb-connect:hover{background-position:-292px -90px;}
+#fb-connect:active{background-position:-292px -169px;}
+#tw-connect{background:url(../images/continue.png) 0px -11px no-repeat;}
+#tw-connect:hover{background-position:0 -90px;}
+#tw-connect:active{background-position:0 -169px;}
+.team .fb-like{
+	float:left;
+	margin:9px 5px 0 5px;
+}
+.team2 .fb-like{
+	float:right;
+}
+.maxPred{
+	margin-top:5px;
+	height:15px;
+}
+.maxPred span{
+	display:block;
+	float: left;
+	font: normal 16px / 16px Arial,sans-serif;
+	width:45px;
+	color: #635357;
+}
+.maxPred .progress{
+	width: 105px;
+	height: 12px;
+	float: left;
+	margin-top: 2px;
+	border:1px #333 solid;
+	border-radius:3px;
+	overflow:hidden;
+}
+.maxPred .progress .complete{
+	height:100%;
+	background-color:#086E89;
+}
+.predictTi{
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin-top: -2px;
+}
+.predictTi .topTitle{
+	display: inline;
+	padding: 0px 25px 2px;
+	margin:0;
+}
