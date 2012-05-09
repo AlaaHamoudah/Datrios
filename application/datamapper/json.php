@@ -82,9 +82,8 @@ class DMZ_Json {
 		$result = array();
 		foreach($object as $o)
 		{
-			$result[] = $o->to_array($fields);
+			$result[] = $o->to_json($fields);
 		}
-		
 		$json = json_encode($result);
 		if($json === FALSE)
 		{

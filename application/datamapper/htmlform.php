@@ -49,10 +49,15 @@ class DMZ_HTMLForm {
 	);
 
 	function __construct($options = array(), $object = NULL) {
-		foreach($options as $k => $v)
+
+		if (is_array($options) )
 		{
-			$this->{$k} = $v;
+			foreach($options as $k => $v)
+			{
+				$this->{$k} = $v;
+			}
 		}
+
 		$this->CI =& get_instance();
 		$this->load = $this->CI->load;
 	}
@@ -215,10 +220,7 @@ class DMZ_HTMLForm {
 			{
 				$a['list'] = $list;
 			}
-			if($options)
-				$options = $options + $a;
-			else
-				$options = $a;
+			$options = $options + $a;
 			$extra_class = array();
 
 			// Add any of the known rules as classes (for JS processing)
@@ -533,12 +535,6 @@ class DMZ_HTMLForm {
 	function _input_hidden($object, $id, $value, $options)
 	{
 		return $this->_render_simple_input('hidden', $id, $value, $options);
-	}
-	
-	function _input_datetime($object, $id, $value, $options)
-	{
-		$value = date(DateTime::W3C,$value);
-		return $this->_render_simple_input('datetime', $id, $value, $options);
 	}
 
 	// render a single-line text input

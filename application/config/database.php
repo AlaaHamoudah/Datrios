@@ -49,8 +49,8 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
-$db['default']['database'] = 'sport_data';
+$db['default']['password'] = '';
+$db['default']['database'] = 'datrios';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
