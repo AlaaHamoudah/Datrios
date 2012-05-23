@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-gjhgjh
+
 class Matches extends CI_Controller {
 	function index($id = 0){
 		$match = new Match($id);
