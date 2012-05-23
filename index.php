@@ -1,5 +1,5 @@
 <?php
-hjgjhgjhgjhg
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
